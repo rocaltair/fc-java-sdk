@@ -29,6 +29,7 @@ public class Config {
 
     private int connectTimeoutMillis = Const.READ_TIMEOUT;
     private int readTimeoutMillis = Const.READ_TIMEOUT;
+    private int threadCount = 1;
 
     private String host;
     private String userAgent;
@@ -241,4 +242,11 @@ public class Config {
         this.credsProvider = credsProvider;
     }
 
+    public int getThreadCount() {
+        return threadCount;
+    }
+
+    public void setThreadCount(int threadCount) {
+        this.threadCount = threadCount;
+    }
 }
